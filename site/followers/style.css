@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    color: #e1306c;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #e1306c;
+    color: white;
+}
+
+.main-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stats-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    flex: 1;
+    min-width: 200px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat h3 {
+    color: #833ab4;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.stat input:focus {
+    border-color: #833ab4;
+}
+
+.package-box {
+    margin-bottom: 30px;
+}
+
+.package-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #405de6;
+}
+
+.packages {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.package {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.package:hover {
+    border-color: #833ab4;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.package h3 {
+    color: #405de6;
+    margin-bottom: 10px;
+}
+
+.package p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e1306c;
+    margin-bottom: 15px;
+}
+
+.free-package {
+    border-color: #4CAF50;
+    background-color: #f0fff0;
+}
+
+.free-package h3 {
+    color: #4CAF50;
+}
+
+.free-package .select-btn {
+    background-color: #4CAF50;
+}
+
+.free-package .select-btn:hover {
+    background-color: #3e8e41;
+}
+
+.select-btn {
+    background-color: #405de6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.select-btn:hover {
+    background-color: #833ab4;
+}
+
+.form-box {
+    margin-bottom: 30px;
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #405de6;
+}
+
+#instagram-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #833ab4;
+}
+
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(to right, #405de6, #833ab4);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, #833ab4, #e1306c);
+    transform: translateY(-2px);
+}
+
+.disclaimer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.progress-box {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.progress-box h2 {
+    color: #405de6;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(to right, #405de6, #833ab4);
+    width: 0%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.followers-added {
+    font-size: 1rem;
+    color: #777;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .stat {
+        min-width: 100%;
+    }
+    
+    .package {
+        min-width: 100%;
+    }
+    
+    .logout-btn {
+        position: static;
+        display: inline-block;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 20px;
+    }
+    
+    header {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+}
